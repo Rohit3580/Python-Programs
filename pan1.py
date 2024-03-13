@@ -1,0 +1,26 @@
+import pandas as pd
+
+data = [(1,'Rohit',99,'Pune'),(2,'Rohan',92,'Satara'),(3,'Abhi',90,'Mumbai'),(4,'Prasad',88,'Solapur'),(5,'Roy',78,'Nashik')]
+
+df = pd.DataFrame(data, columns=['RollNo','Name','Marks','City'])
+print(df)
+print("--------------------------------------------------------------")
+print("Top 2 entries:")
+print(df.head(2))
+print("--------------------------------------------------------------")
+print("Bottom entry:")
+print(df.tail(1))
+print("--------------------------------------------------------------")
+print("Shape of dataframe:",df.shape)
+print("--------------------------------------------------------------")
+print("Number of rows:",len(df))
+print("--------------------------------------------------------------")
+print("Number of columns:",len(df.columns))
+print("--------------------------------------------------------------")
+print("Size of datagframe:",df.size)
+print("--------------------------------------------------------------")
+print("Datatype of dataframe:",df.dtypes)
+print("--------------------------------------------------------------")
+print("DataValues:",df.values)
+print("--------------------------------------------------------------")
+print("index:",df.index)
